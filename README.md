@@ -6,6 +6,8 @@ A simple Raiden-style shoot 'em up game written in Java.
 [![GitHub stars](https://img.shields.io/github/stars/dynamicfire/Rocketman-Odyssey.svg)](https://github.com/dynamicfire/Rocketman-Odyssey/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/dynamicfire/Rocketman-Odyssey.svg)](https://github.com/dynamicfire/Rocketman-Odyssey/issues)
 
+> ⚠️ **This repository is archived.** It was a small thing I made while learning, and now it's done. No further updates planned — though who knows, maybe I'll be back in another decade.
+
 > A side project from my university days (~2018). Back then I called it "a project for my Java Semester" — whatever that means.
 
 ## Screenshot
@@ -76,6 +78,14 @@ Somewhere in Svalbard, on a reel of film deep inside a decommissioned coal mine,
 A decade feels long when you're living it. But knowing this code will sit in permafrost for a millennium puts things in perspective. We write, we learn, we move on — and somehow, the artifacts remain.
 
 时间易逝，人生短暂。一晃快十年了。
+
+---
+
+I don't mass-produce repos. Each one marks a chapter — a version of me that once sat in front of a screen, mass-producing code, mass-producing unknowns. 
+
+This one's from a student who thought MVC meant making three folders. Now it's archived, gathering digital dust. Strange to close a chapter on something so small, but here we are.
+
+See you in ten years, maybe.
 
 ## License
 
