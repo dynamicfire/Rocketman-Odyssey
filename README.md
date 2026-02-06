@@ -6,7 +6,7 @@ A simple Raiden-style shoot 'em up game written in Java.
 [![GitHub stars](https://img.shields.io/github/stars/dynamicfire/Rocketman-Odyssey.svg)](https://github.com/dynamicfire/Rocketman-Odyssey/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/dynamicfire/Rocketman-Odyssey.svg)](https://github.com/dynamicfire/Rocketman-Odyssey/issues)
 
-> A side project from my university days (~2017). Back then I called it "a project for my Java Semester" — whatever that means.
+> A side project from my university days (~2018). Back then I called it "a project for my Java Semester" — whatever that means.
 
 ## Screenshot
 
@@ -59,7 +59,7 @@ src/com/Raiden/
 
 ## History
 
-This project was originally created around 2017 when I was learning Java. 
+This project was originally created around 2018 when I was learning Java. 
 
 The original code used a textbook-style `Model/View/Controller` folder structure — which didn't really fit a game project at all. The code wasn't strictly MVC either; it was just three folders named after a pattern I'd heard of. Classic student move.
 
