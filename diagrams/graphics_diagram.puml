@@ -1,0 +1,41 @@
+@startuml
+title com.Raiden.graphics
+skinparam classAttributeIconSize 0
+
+class Cloud {
+  - posX: int
+  - posY: int
+  - speedY: int
+  - width: int
+  - height: int
+  + move(): void
+  + draw(): void
+}
+
+class Background {
+  - posX: int
+  - posY: int
+  - width: int
+  - height: int
+  - img: Image
+  + move(): void
+  + draw(): void
+}
+
+class InitView {
+  + run(): void
+}
+
+class DrawCanvas {
+  - powerups: ArrayList<PowerUP>
+  - bullets: ArrayList<Bullet>
+  - enemies: ArrayList<Enemy>
+  - enemyBullets: ArrayList<EnemyBullet>
+  - clouds: ArrayList<Cloud>
+  + paintComponent(): void
+  + run(): void
+}
+
+JPanel <|-- DrawCanvas
+Runnable <|.. DrawCanvas
+@enduml

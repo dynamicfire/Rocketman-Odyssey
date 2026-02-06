@@ -1,0 +1,23 @@
+@startuml
+title com.Raiden.core
+skinparam classAttributeIconSize 0
+
+class World {
+  + bullets: ArrayList<Bullet>
+  + enemyBullets: ArrayList<EnemyBullet>
+  + bulletsToRemove: ArrayList<Bullet>
+  + enemyBulletsToRemove: ArrayList<EnemyBullet>
+  + powerUPS: ArrayList<PowerUP>
+  - imageLoad(): void
+  + enemyMaker(): void
+  + powerUPMaker(): void
+  + cloudMaker(): void
+  + getPowerUPS(): ArrayList<PowerUP>
+}
+
+Runnable <|.. World
+KeyListener <|.. World
+ActionListener <|.. World
+MouseListener <|.. World
+MouseMotionListener <|.. World
+@enduml

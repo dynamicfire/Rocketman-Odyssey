@@ -1,0 +1,123 @@
+@startuml
+title com.Raiden.entities
+skinparam classAttributeIconSize 0
+
+class DeadActor {
+  - posX: int
+  - posY: int
+  - img: Image
+  + draw(): void
+  + actionPerformed(): void
+}
+
+class Enemy {
+  - score: int
+  - img: Image
+  - frame: JFrame
+  - world: World
+  - frame: JFrame
+  + fireAt(): void
+  + drift(): void
+  + draw(): void
+  + getScore(): int
+  + actionPerformed(): void
+}
+
+class is {
+  - posX: float
+  - posY: float
+  - width: int
+  - height: int
+  - frame: JFrame
+  + drift(): void
+  + draw(): void
+  + getPosX(): float
+  + getPosY(): float
+  + getWidth(): int
+}
+
+class is {
+  - posX: float
+  - posY: float
+  - health: int
+  - width: int
+  - height: int
+  + draw(): void
+  + getPosX(): float
+  + getPosY(): float
+  + getWidth(): int
+  + getHeight(): int
+}
+
+class is {
+  - posX: float
+  - posY: float
+  - damage: int
+  - width: int
+  - height: int
+  + advance(): void
+  + getSpeed(): float
+  + getSpeedX(): float
+  + getSpeedY(): float
+  + getPosX(): float
+}
+
+class Shield {
+  - img: Image
+  - world: World
+  + draw(): void
+  + intersection(): void
+}
+
+class Player {
+  - score: int
+  - img: Image
+  - frame: JFrame
+  - ammunition: int
+  - magazine: int
+  + fireAt(): void
+  + boardDetection(): void
+  + draw(): void
+  + getScore(): int
+  + setScore(): void
+}
+
+class EnemyBullet {
+  - img: Image
+  - frame: JFrame
+  - world: World
+  + attack(): void
+  + intersection(): void
+  + draw(): void
+}
+
+class Laser {
+  - img: Image
+  - world: World
+  + draw(): void
+  + intersection(): void
+}
+
+class LaserBullet {
+  - img1: Image
+  - frame: JFrame
+  - world: World
+  + intersection(): void
+  + draw(): void
+}
+
+class NormalBullet {
+  - img: Image
+  - world: World
+  + intersection(): void
+  + draw(): void
+}
+
+Aircraft <|-- Enemy
+PowerUP <|-- Shield
+Aircraft <|-- Player
+Bullet <|-- EnemyBullet
+PowerUP <|-- Laser
+Bullet <|-- LaserBullet
+Bullet <|-- NormalBullet
+@enduml

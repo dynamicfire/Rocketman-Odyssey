@@ -6,23 +6,65 @@ A simple Raiden-style shoot 'em up game written in Java.
 [![GitHub stars](https://img.shields.io/github/stars/dynamicfire/Rocketman-Odyssey.svg)](https://github.com/dynamicfire/Rocketman-Odyssey/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/dynamicfire/Rocketman-Odyssey.svg)](https://github.com/dynamicfire/Rocketman-Odyssey/issues)
 
-> A side project I built while learning Java. Nothing fancy, just for fun.
+> A side project from my university days (~2017). Back then I called it "a project for my Java Semester" — whatever that means. 😅
 
 ## Screenshot
 
-![gameplay](https://raw.githubusercontent.com/dynamicfire/Rocketman-Odyssey/master/screenshot.gif)
+![gameplay](screenshot.gif)
 
 ## How to Run
 
 ```bash
 git clone https://github.com/dynamicfire/Rocketman-Odyssey.git
+cd Rocketman-Odyssey
 ```
 
-Open the project in IntelliJ IDEA (or any Java IDE you prefer).
+Open the project in IntelliJ IDEA (or any Java IDE), then run `InitView.java`.
 
-> **Note:** Set JVM max heap size to at least 256MB (`-Xmx256m`)
+> **Note:** Set JVM max heap to at least 256MB (`-Xmx256m`) or things might get choppy.
 
 ## Controls
 
-- **F1** — Start game
-- **Space** — Pause
+| Key | Action |
+|-----|--------|
+| **F1** | Start game |
+| **Space** | Pause |
+| **Arrow keys** | Move |
+
+## Project Structure
+
+```
+src/com/Raiden/
+├── entities/   # Game actors (Player, Enemy, Bullet, etc.)
+├── graphics/   # Rendering (DrawCanvas, Background, Cloud)
+├── audio/      # Sound effects
+└── core/       # Game logic (World)
+```
+
+### Class Diagram
+
+![class diagram](diagrams/full_diagram.png)
+
+<details>
+<summary>📦 Package diagrams</summary>
+
+| Package | Diagram |
+|---------|---------|
+| entities | ![](diagrams/entities_diagram.png) |
+| graphics | ![](diagrams/graphics_diagram.png) |
+| core | ![](diagrams/core_diagram.png) |
+| audio | ![](diagrams/audio_diagram.png) |
+
+</details>
+
+## History
+
+This project was originally created around 2017 when I was learning Java. 
+
+The original code used a textbook-style `Model/View/Controller` folder structure — which didn't really fit a game project at all. The code wasn't strictly MVC either; it was just three folders named after a pattern I'd heard of. Classic student move. 🎓
+
+In 2026, I finally got around to reorganizing it into something more sensible (`entities/graphics/audio/core`). The original MVC diagrams are preserved in [`archive/original-diagrams/`](archive/original-diagrams/) as a monument to youthful ambition.
+
+## License
+
+MIT

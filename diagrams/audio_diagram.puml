@@ -1,0 +1,18 @@
+@startuml
+title com.Raiden.audio
+skinparam classAttributeIconSize 0
+
+class SoundEffect {
+  - filename: String
+  - audioStream: AudioInputStream
+  - audioFormat: AudioFormat
+  - sourceLine: SourceDataLine
+  + playSound(): void
+  + run(): void
+  + play(): void
+  + onPlay(): void
+  + pause(): void
+}
+
+Runnable <|.. SoundEffect
+@enduml

@@ -1,0 +1,190 @@
+@startuml
+title Rocketman-Odyssey
+skinparam classAttributeIconSize 0
+
+class DeadActor {
+  - posX: int
+  - posY: int
+  - img: Image
+  + draw(): void
+  + actionPerformed(): void
+}
+
+class Enemy {
+  - score: int
+  - img: Image
+  - frame: JFrame
+  - world: World
+  - frame: JFrame
+  + fireAt(): void
+  + drift(): void
+  + draw(): void
+  + getScore(): int
+  + actionPerformed(): void
+}
+
+class is {
+  - posX: float
+  - posY: float
+  - width: int
+  - height: int
+  - frame: JFrame
+  + drift(): void
+  + draw(): void
+  + getPosX(): float
+  + getPosY(): float
+  + getWidth(): int
+}
+
+class is {
+  - posX: float
+  - posY: float
+  - health: int
+  - width: int
+  - height: int
+  + draw(): void
+  + getPosX(): float
+  + getPosY(): float
+  + getWidth(): int
+  + getHeight(): int
+}
+
+class is {
+  - posX: float
+  - posY: float
+  - damage: int
+  - width: int
+  - height: int
+  + advance(): void
+  + getSpeed(): float
+  + getSpeedX(): float
+  + getSpeedY(): float
+  + getPosX(): float
+}
+
+class Shield {
+  - img: Image
+  - world: World
+  + draw(): void
+  + intersection(): void
+}
+
+class Player {
+  - score: int
+  - img: Image
+  - frame: JFrame
+  - ammunition: int
+  - magazine: int
+  + fireAt(): void
+  + boardDetection(): void
+  + draw(): void
+  + getScore(): int
+  + setScore(): void
+}
+
+class EnemyBullet {
+  - img: Image
+  - frame: JFrame
+  - world: World
+  + attack(): void
+  + intersection(): void
+  + draw(): void
+}
+
+class Laser {
+  - img: Image
+  - world: World
+  + draw(): void
+  + intersection(): void
+}
+
+class LaserBullet {
+  - img1: Image
+  - frame: JFrame
+  - world: World
+  + intersection(): void
+  + draw(): void
+}
+
+class NormalBullet {
+  - img: Image
+  - world: World
+  + intersection(): void
+  + draw(): void
+}
+
+class Cloud {
+  - posX: int
+  - posY: int
+  - speedY: int
+  - width: int
+  - height: int
+  + move(): void
+  + draw(): void
+}
+
+class Background {
+  - posX: int
+  - posY: int
+  - width: int
+  - height: int
+  - img: Image
+  + move(): void
+  + draw(): void
+}
+
+class InitView {
+  + run(): void
+}
+
+class DrawCanvas {
+  - powerups: ArrayList<PowerUP>
+  - bullets: ArrayList<Bullet>
+  - enemies: ArrayList<Enemy>
+  - enemyBullets: ArrayList<EnemyBullet>
+  - clouds: ArrayList<Cloud>
+  + paintComponent(): void
+  + run(): void
+}
+
+class SoundEffect {
+  - filename: String
+  - audioStream: AudioInputStream
+  - audioFormat: AudioFormat
+  - sourceLine: SourceDataLine
+  + playSound(): void
+  + run(): void
+  + play(): void
+  + onPlay(): void
+  + pause(): void
+}
+
+class World {
+  + bullets: ArrayList<Bullet>
+  + enemyBullets: ArrayList<EnemyBullet>
+  + bulletsToRemove: ArrayList<Bullet>
+  + enemyBulletsToRemove: ArrayList<EnemyBullet>
+  + powerUPS: ArrayList<PowerUP>
+  - imageLoad(): void
+  + enemyMaker(): void
+  + powerUPMaker(): void
+  + cloudMaker(): void
+  + getPowerUPS(): ArrayList<PowerUP>
+}
+
+Aircraft <|-- Enemy
+PowerUP <|-- Shield
+Aircraft <|-- Player
+Bullet <|-- EnemyBullet
+PowerUP <|-- Laser
+Bullet <|-- LaserBullet
+Bullet <|-- NormalBullet
+JPanel <|-- DrawCanvas
+Runnable <|.. DrawCanvas
+Runnable <|.. SoundEffect
+Runnable <|.. World
+KeyListener <|.. World
+ActionListener <|.. World
+MouseListener <|.. World
+MouseMotionListener <|.. World
+@enduml
