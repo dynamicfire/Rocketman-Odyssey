@@ -1,4 +1,8 @@
-package com.Raiden.Model;
+package com.Raiden.core;
+
+import com.Raiden.entities.*;
+import com.Raiden.graphics.*;
+import com.Raiden.audio.SoundEffect;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,30 +17,30 @@ import static java.awt.event.KeyEvent.*;
  * Game's world initializer: add flights, bullets, power-ups etc.
 */
 public class World implements Runnable, KeyListener, ActionListener, MouseListener, MouseMotionListener {
-    protected ArrayList<Bullet> bullets = new ArrayList<Bullet>();
-    protected ArrayList<EnemyBullet> enemyBullets = new ArrayList<EnemyBullet>();
-    protected ArrayList<Bullet> bulletsToRemove = new ArrayList<Bullet>();
-    protected ArrayList<EnemyBullet> enemyBulletsToRemove = new ArrayList<EnemyBullet>();
-    protected ArrayList<PowerUP> powerUPS = new ArrayList<PowerUP>();
-    protected ArrayList<PowerUP> powerUPSToRemove = new ArrayList<PowerUP>();
-    protected ArrayList<Enemy> enemy = new ArrayList<Enemy>();
-    protected ArrayList<Enemy> enemiesToRemove = new ArrayList<Enemy>();
-    protected ArrayList<Cloud> clouds = new ArrayList<Cloud>();
-    protected ArrayList<Cloud> cloudsToRemove = new ArrayList<Cloud>();
-    protected ArrayList<Background> backgrounds = new ArrayList<Background>();
-    protected ArrayList<DeadActor> deadActors = new ArrayList<DeadActor>();
-    protected ArrayList<DeadActor> deadActorsToRemove = new ArrayList<DeadActor>();
-    protected Player player;
-    protected Background background1, background2;
-    protected JFrame frame;
-    protected Image powerUPImg;
-    protected Image bulletImg;
-    protected Image enemyBulletImg;
-    protected Image backgroundImg1, backgroundImg2;
-    protected Image playerImg;
-    protected Image enemyImg;
-    protected Image deadImg;
-    protected Image cloudImg;
+    public ArrayList<Bullet> bullets = new ArrayList<Bullet>();
+    public ArrayList<EnemyBullet> enemyBullets = new ArrayList<EnemyBullet>();
+    public ArrayList<Bullet> bulletsToRemove = new ArrayList<Bullet>();
+    public ArrayList<EnemyBullet> enemyBulletsToRemove = new ArrayList<EnemyBullet>();
+    public ArrayList<PowerUP> powerUPS = new ArrayList<PowerUP>();
+    public ArrayList<PowerUP> powerUPSToRemove = new ArrayList<PowerUP>();
+    public ArrayList<Enemy> enemy = new ArrayList<Enemy>();
+    public ArrayList<Enemy> enemiesToRemove = new ArrayList<Enemy>();
+    public ArrayList<Cloud> clouds = new ArrayList<Cloud>();
+    public ArrayList<Cloud> cloudsToRemove = new ArrayList<Cloud>();
+    public ArrayList<Background> backgrounds = new ArrayList<Background>();
+    public ArrayList<DeadActor> deadActors = new ArrayList<DeadActor>();
+    public ArrayList<DeadActor> deadActorsToRemove = new ArrayList<DeadActor>();
+    public Player player;
+    public Background background1, background2;
+    public JFrame frame;
+    public Image powerUPImg;
+    public Image bulletImg;
+    public Image enemyBulletImg;
+    public Image backgroundImg1, backgroundImg2;
+    public Image playerImg;
+    public Image enemyImg;
+    public Image deadImg;
+    public Image cloudImg;
 
 
     public World(JFrame frame){

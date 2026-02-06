@@ -4,7 +4,7 @@
  * Copyright (c) 2014 dberm22
  * https://github.com/dberm22/DBoard/
  */
-package com.Raiden.Controller;
+package com.Raiden.audio;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

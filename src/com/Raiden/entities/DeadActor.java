@@ -1,4 +1,5 @@
-package com.Raiden.Model;
+package com.Raiden.entities;
+import com.Raiden.core.World;
 
 import javax.swing.Timer;
 import java.awt.*;

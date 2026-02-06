@@ -1,4 +1,4 @@
-package com.Raiden.Model;
+package com.Raiden.graphics;
 
 import javax.swing.*;
 import java.awt.*;

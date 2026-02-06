@@ -1,6 +1,8 @@
-package com.Raiden.View;
+package com.Raiden.graphics;
 
-import com.Raiden.Model.*;
+import com.Raiden.entities.*;
+import com.Raiden.graphics.*;
+import com.Raiden.core.*;
 
 import javax.swing.*;
 import java.awt.*;

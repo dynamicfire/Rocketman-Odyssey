@@ -1,6 +1,7 @@
-package com.Raiden.Model;
+package com.Raiden.entities;
+import com.Raiden.core.World;
 
-import com.Raiden.Controller.SoundEffect;
+import com.Raiden.audio.SoundEffect;
 
 import javax.swing.*;
 import java.awt.*;

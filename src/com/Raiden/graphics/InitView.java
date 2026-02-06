@@ -1,7 +1,7 @@
-package com.Raiden.View;
+package com.Raiden.graphics;
 
-import com.Raiden.Controller.SoundEffect;
-import com.Raiden.Model.World;
+import com.Raiden.audio.SoundEffect;
+import com.Raiden.core.World;
 
 import javax.swing.*;
 

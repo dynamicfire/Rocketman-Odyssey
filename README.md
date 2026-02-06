@@ -1,19 +1,28 @@
 # Rocketman-Odyssey
-A simple Java implementation of Raiden-like game
+
+A simple Raiden-style shoot 'em up game written in Java.
 
 [![GitHub license](https://img.shields.io/github/license/dynamicfire/Rocketman-Odyssey.svg)](https://github.com/dynamicfire/Rocketman-Odyssey/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/dynamicfire/Rocketman-Odyssey.svg)](https://github.com/dynamicfire/Rocketman-Odyssey/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/dynamicfire/Rocketman-Odyssey.svg)](https://github.com/dynamicfire/Rocketman-Odyssey/issues)
 
-> It's a project for my Java Semester. The goal of the project is to implement a Raiden-like game using Java.
-
-> set the maximum memory usage for JVM at least 256mb
+> A side project I built while learning Java. Nothing fancy, just for fun.
 
 ## Screenshot
-![1](https://raw.githubusercontent.com/dynamicfire/Rocketman-Odyssey/master/screenshot.gif)
 
-```
+![gameplay](https://raw.githubusercontent.com/dynamicfire/Rocketman-Odyssey/master/screenshot.gif)
+
+## How to Run
+
+```bash
 git clone https://github.com/dynamicfire/Rocketman-Odyssey.git
 ```
-Open this project with IntelliJ IDEA(or whatever ide you like)
-Press F1 to play, space to pause
+
+Open the project in IntelliJ IDEA (or any Java IDE you prefer).
+
+> **Note:** Set JVM max heap size to at least 256MB (`-Xmx256m`)
+
+## Controls
+
+- **F1** — Start game
+- **Space** — Pause
