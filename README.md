@@ -73,7 +73,7 @@ In 2026, I finally got around to reorganizing it into something more sensible (`
 
 This repository is part of the [GitHub Arctic Code Vault](https://archiveprogram.github.com/) — a mass of code frozen in the Arctic, preserved for 1,000 years.
 
-Somewhere in Svalbard, on a reel of film deep inside a decommissioned coal mine, there's a copy of my messy 2017 Java code with its nonsensical MVC folders and "Java Semester" README. It will outlive me. It might outlive human civilization.
+Somewhere in Svalbard, on a reel of film deep inside a decommissioned coal mine, there's a copy of my messy 2018 Java code with its nonsensical MVC folders and "Java Semester" README. It will outlive me. It might outlive human civilization.
 
 A decade feels long when you're living it. But knowing this code will sit in permafrost for a millennium puts things in perspective. We write, we learn, we move on — and somehow, the artifacts remain.
 
