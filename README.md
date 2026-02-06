@@ -65,6 +65,18 @@ The original code used a textbook-style `Model/View/Controller` folder structure
 
 In 2026, I finally got around to reorganizing it into something more sensible (`entities/graphics/audio/core`). The original MVC diagrams are preserved in [`archive/original-diagrams/`](archive/original-diagrams/) as a monument to youthful ambition.
 
+---
+
+### Arctic Code Vault 🏔️
+
+This repository is part of the [GitHub Arctic Code Vault](https://archiveprogram.github.com/) — a mass of code frozen in the Arctic, preserved for 1,000 years.
+
+Somewhere in Svalbard, on a reel of film deep inside a decommissioned coal mine, there's a copy of my messy 2017 Java code with its nonsensical MVC folders and "Java Semester" README. It will outlive me. It might outlive human civilization.
+
+A decade feels long when you're living it. But knowing this code will sit in permafrost for a millennium puts things in perspective. We write, we learn, we move on — and somehow, the artifacts remain.
+
+时间易逝，人生短暂。一晃快十年了。
+
 ## License
 
 MIT
